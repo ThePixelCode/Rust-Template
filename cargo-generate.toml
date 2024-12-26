@@ -5,3 +5,8 @@ locale = { prompt = "Do you wish to locale your project (rust-i18n)?", default =
 serde = { prompt = "Do you wish to serialize and deserialize (serde)?", default = true, type = "bool" }
 async = { prompt = "Do you wish to use async (TOKIOOOO!!!!)?", default = false, type = "bool" }
 
+[template]
+ignore = [
+  "target",
+  "Cargo.lock"
+]
