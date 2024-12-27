@@ -4,6 +4,7 @@ request = { prompt = "Do you wish to request something from the internet (reqwes
 locale = { prompt = "Do you wish to locale your project (rust-i18n)?", default = true, type = "bool" }
 serde = { prompt = "Do you wish to serialize and deserialize (serde)?", default = true, type = "bool" }
 async = { prompt = "Do you wish to use async (TOKIOOOO!!!!)?", default = false, type = "bool" }
+license = { prompt = "Choose your project license", choices = ["GPL-3", "MIT", "APACHE"], default = "GPL-3", type = "string" }
 
 [template]
 ignore = [
