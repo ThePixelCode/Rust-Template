@@ -14,3 +14,4 @@ ignore = [
 
 [hooks]
 pre = ["pre-script.rhai"]
+post = ["post-script.rhai"]
