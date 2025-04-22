@@ -1,5 +1,6 @@
 [placeholders]
 commandline_args = { prompt = "Do you wish to parse command line arguments (clap)?", default = true, type = "bool" }
+xdg = { prompt = "Do you wish to access linux user directories (xdg)?", default = true, type = "bool" }
 request = { prompt = "Do you wish to request something from the internet (reqwest)?", default = false, type = "bool" }
 locale = { prompt = "Do you wish to locale your project (rust-i18n)?", default = true, type = "bool" }
 serde = { prompt = "Do you wish to serialize and deserialize (serde)?", default = true, type = "bool" }
