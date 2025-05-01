@@ -2,11 +2,16 @@ pub struct W<T>(pub T);
 
 pub trait Wrap {
     fn wrap(self) -> W<Self>;
+    fn unwrap(value: W<Self>) -> Self;
 }
 
 impl<T: Sized> Wrap for T {
     fn wrap(self) -> W<Self> {
         W(self)
+    }
+
+    fn unwrap(value: W<Self>) -> Self {
+        value.0
     }
 }
 
