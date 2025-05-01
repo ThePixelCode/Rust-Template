@@ -7,11 +7,13 @@ authors = ["{{authors}}"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+log = "0.4.*"
+simplelog = "0.12.*"
+thiserror = "2.0.*"
 {% if commandline_args %}clap = { version = "4.5.*", features = ["derive", "string"] }{% endif %}
 {% if request %}{% if async %}reqwest = { version = "0.12.*", features = ["json", "cookies"] }{% else %}reqwest = { version = "0.12.*", features = ["blocking", "json", "cookies"] }{% endif %}{% endif %}
 {% if locale %}rust-i18n = "3.1.*"{% endif %}
 {% if serde %}serde = { version = "1.0.*", features = ["derive"] }
 serde_json = "1.0.*"{% endif %}
-thiserror = "2.0.*"
 {% if async %}tokio = { version = "1.42.*", features = ["full"] }{% endif %}
 {% if xdg %}xdg = "2.5.2"{% endif %}
